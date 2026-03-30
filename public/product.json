@@ -1,0 +1,122 @@
+[
+    {
+        "id": "prod_01",
+        "name": "CloudSync Pro",
+        "description": "Seamless real-time file synchronization and backup for distributed teams.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "Best Seller",
+        "tagType": "best-seller",
+        "features": [
+            "Unlimited storage",
+            "256-bit encryption",
+            "Team permissions"
+        ],
+        "icon": "cloud-upload"
+    },
+    {
+        "id": "prod_02",
+        "name": "DesignFlow",
+        "description": "A comprehensive UI/UX kit with over 500+ customizable components.",
+        "price": 89,
+        "period": "one-time",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "Figma & Sketch files",
+            "Free lifetime updates",
+            "Commercial license"
+        ],
+        "icon": "palette"
+    },
+    {
+        "id": "prod_03",
+        "name": "Analytica AI",
+        "description": "Deep-dive data insights powered by machine learning for your e-commerce.",
+        "price": 29,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "Custom dashboards",
+            "Predictive modeling",
+            "Export to CSV/PDF"
+        ],
+        "icon": "bar-chart"
+    },
+    {
+        "id": "prod_04",
+        "name": "DevStack Yearly",
+        "description": "Full access to our premium API suite and developer documentation.",
+        "price": 199,
+        "period": "yearly",
+        "tag": "Save 20%",
+        "tagType": "popular",
+        "features": [
+            "1M API calls/mo",
+            "Priority support",
+            "Webhooks integration"
+        ],
+        "icon": "code-bracket"
+    },
+    {
+        "id": "prod_05",
+        "name": "SocialPilot",
+        "description": "Automated social media scheduling and engagement tracking.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "Trending",
+        "tagType": "new",
+        "features": [
+            "Multi-platform posting",
+            "AI caption generator",
+            "Analytics report"
+        ],
+        "icon": "share-nodes"
+    },
+    {
+        "id": "prod_06",
+        "name": "SecureVault",
+        "description": "Enterprise-grade password management and identity protection.",
+        "price": 45,
+        "period": "yearly",
+        "tag": "Top Rated",
+        "tagType": "best-seller",
+        "features": [
+            "Biometric login",
+            "Dark web monitoring",
+            "Family sharing"
+        ],
+        "icon": "shield-check"
+    },
+    {
+        "id": "prod_07",
+        "name": "StreamLine",
+        "description": "High-fidelity video conferencing with low-latency streaming.",
+        "price": 0,
+        "period": "monthly",
+        "tag": "Free Tier",
+        "tagType": "new",
+        "features": [
+            "Up to 100 participants",
+            "Screen sharing",
+            "HD Recording"
+        ],
+        "icon": "video-camera"
+    },
+    {
+        "id": "prod_08",
+        "name": "AssetManager",
+        "description": "Digital asset management for high-resolution media and branding.",
+        "price": 150,
+        "period": "one-time",
+        "tag": "Enterprise",
+        "tagType": "best-seller",
+        "features": [
+            "Version control",
+            "Smart tagging",
+            "Bulk metadata editing"
+        ],
+        "icon": "folder-open"
+    }
+]
