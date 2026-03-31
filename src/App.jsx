@@ -1,6 +1,8 @@
 
 import './App.css'
+import Banner from './Component/Banner/Banner'
 import Navbar from './Component/Navbar/Navbar'
+import Stats from './Component/Stats/Stats'
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
     <>
 
       <Navbar />
+      <Banner />
+      <Stats />
 
       <h1 className='text-center text-black text-3xl font-bold bg-amber-100'>
         DigiTool Platform
