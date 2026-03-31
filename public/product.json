@@ -12,7 +12,7 @@
             "256-bit encryption",
             "Team permissions"
         ],
-        "icon": "cloud-upload"
+        "icon": "https://www.cloudsyncpro.com/portal/images/teamcloud2.jpg"
     },
     {
         "id": "prod_02",
@@ -27,7 +27,7 @@
             "Free lifetime updates",
             "Commercial license"
         ],
-        "icon": "palette"
+        "icon": "https://designflow.app/assets/img/demo/logo.png"
     },
     {
         "id": "prod_03",
@@ -42,7 +42,7 @@
             "Predictive modeling",
             "Export to CSV/PDF"
         ],
-        "icon": "bar-chart"
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnA5grJQO7gxNYKFcmUEjMnM3ANsceTWz80ScYPirUvg&s"
     },
     {
         "id": "prod_04",
@@ -57,7 +57,7 @@
             "Priority support",
             "Webhooks integration"
         ],
-        "icon": "code-bracket"
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJEL6pTyNejhdOFb0h5Bh4jsTRz9s5LMDPtA&s"
     },
     {
         "id": "prod_05",
@@ -72,7 +72,7 @@
             "AI caption generator",
             "Analytics report"
         ],
-        "icon": "share-nodes"
+        "icon": "https://play-lh.googleusercontent.com/w-sgSjf6QqKazKefCm17NYlVOkOPAZsgzgS7rNV2_1afXYnHJkaVUZMxiFF1wfS7Nc6v"
     },
     {
         "id": "prod_06",
@@ -87,7 +87,7 @@
             "Dark web monitoring",
             "Family sharing"
         ],
-        "icon": "shield-check"
+        "icon": "https://securevault.in/favicon.ico"
     },
     {
         "id": "prod_07",
@@ -102,7 +102,7 @@
             "Screen sharing",
             "HD Recording"
         ],
-        "icon": "video-camera"
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR39qvJwZP9zGvM08NSbcZAQ8tzm2aiz79amQ&s"
     },
     {
         "id": "prod_08",
@@ -117,6 +117,6 @@
             "Smart tagging",
             "Bulk metadata editing"
         ],
-        "icon": "folder-open"
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4V6puZQRCAEUKuPKTj9f8SmHCKtmiQdpzFZPAquaYHg&s"
     }
 ]
