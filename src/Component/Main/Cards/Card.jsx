@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MdCheckCircle } from 'react-icons/md';
+import { toast } from 'react-toastify';
 
 const Card = ({ card, carts, setCarts }) => {
 
@@ -7,6 +8,7 @@ const Card = ({ card, carts, setCarts }) => {
     const handleBuyNow = () => {
         setSubs(true);
         setCarts([...carts, card]);
+        toast("Item Adde To Cart")
     };
 
 

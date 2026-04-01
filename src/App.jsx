@@ -7,6 +7,7 @@ import TabSection from './Component/Main/Cards/TabSection'
 import Navbar from './Component/Navbar/Navbar'
 import Stats from './Component/Stats/Stats'
 import Cart from './Component/Main/Cards/Cart'
+import { ToastContainer } from 'react-toastify'
 
 
 const getCards = async () => {
@@ -38,7 +39,7 @@ function App() {
         <Cards cardsPromise={cardsPromise} carts={carts} setCarts={setCarts} />
       </Suspense> :
         <Cart carts={carts} setCarts={setCarts} />}
-
+      <ToastContainer />
     </>
   )
 }

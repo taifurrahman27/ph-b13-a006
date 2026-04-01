@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TabSection = ({ setActiveTab }) => {
+const TabSection = ({ setActiveTab, carts }) => {
 
     return (
         <div className='container mx-auto text-center my-5'>
@@ -12,7 +12,7 @@ const TabSection = ({ setActiveTab }) => {
                 <input type="radio" name="my_tabs_1" className="tab rounded-full  " aria-label="Products"
                     defaultChecked onClick={() => setActiveTab("Products")} />
 
-                <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label="Cart" onClick={() => setActiveTab("Cart")} />
+                <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label={`Cart (${carts.length})`} onClick={() => setActiveTab("Cart")} />
             </div>
         </div>
     );
