@@ -1,11 +1,13 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Component/Banner/Banner'
 import Cards from './Component/Main/Cards/Cards'
 import TabSection from './Component/Main/Cards/TabSection'
 import Navbar from './Component/Navbar/Navbar'
 import Stats from './Component/Stats/Stats'
+import Cart from './Component/Main/Cards/Cart'
+import Card from './Component/Main/Cards/Card'
 
 
 const getCards = async () => {
@@ -16,7 +18,14 @@ const getCards = async () => {
 
 function App() {
 
+  const [activeTab, setActiveTab] = useState("Products");
+  // console.log(activeTab);
   const cardsPromise = getCards();
+  const [carts, setCarts] = useState([]);
+
+  // console.log(carts);
+
+
 
   return (
     <>
@@ -24,11 +33,11 @@ function App() {
       <Navbar />
       <Banner />
       <Stats />
-      <TabSection />
-      <Suspense>
-        <Cards cardsPromise={cardsPromise} />
-      </Suspense>
+      <TabSection activeTab={activeTab} setActiveTab={setActiveTab} />
 
+      {activeTab === "Products" ? <Suspense>
+        <Cards cardsPromise={cardsPromise} carts={carts} setCarts={setCarts} />
+      </Suspense> : <Cart carts={carts} />}
 
 
 
