@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Component/Banner/Banner'
@@ -19,13 +19,11 @@ const getCards = async () => {
   return res.json()
 }
 
-
 function App() {
 
   const [activeTab, setActiveTab] = useState("Products");
   const cardsPromise = getCards();
   const [carts, setCarts] = useState([]);
-
 
   return (
     <>
@@ -39,12 +37,13 @@ function App() {
         <Cards cardsPromise={cardsPromise} carts={carts} setCarts={setCarts} />
       </Suspense> :
         <Cart carts={carts} setCarts={setCarts} />}
+
       <Steps />
       <Pricing />
       <Transform />
-
       <Footer />
       <ToastContainer />
+
     </>
   )
 }

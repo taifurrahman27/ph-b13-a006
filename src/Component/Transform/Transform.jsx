@@ -5,7 +5,10 @@ const Transform = () => {
         <div className='text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-20'>
             <div className='container mx-auto text-center space-y-5'>
                 <h1 className='text-4xl font-bold'>Ready to Transform Your Workflow?</h1>
-                <p>Join thousands of professionals who are already using Digitools to work smarter. <br />Start your free trial today.</p>
+                <p>Join thousands of professionals who are already using Digitools to work smarter.
+                    <br />
+                    Start your free trial today.
+                </p>
 
                 <div className='flex justify-center gap-4'>
                     <div className="btn bg-white rounded-full mt-auto border-none">

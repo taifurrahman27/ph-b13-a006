@@ -1,5 +1,4 @@
 import React from 'react';
-import { IoPlayOutline } from 'react-icons/io5';
 
 const Banner = () => {
     return (
@@ -15,9 +14,13 @@ const Banner = () => {
                     <button className='inline-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>
                         New: AI-Powered Tools Available</button>
                 </div>
-                <h1 className='text-7xl font-bold'>Supercharge Your <br />Digital Workflow</h1>
-                <p>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
-                    <br />Explore Products
+                <h1 className='text-7xl font-bold'>Supercharge Your
+                    <br />
+                    Digital Workflow
+                </h1>
+                <p className='text-[#627382]'>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
+                    <br />
+                    Explore Products
                 </p>
                 <div className='flex gap-2 py-3 justify-center items-center'>
 

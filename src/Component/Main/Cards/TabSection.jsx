@@ -27,8 +27,7 @@ const TabSection = ({ setActiveTab, carts }) => {
                         ${active === "Products"
                             ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-lg scale-103"
                             : "bg-gray-200 text-[#101727] hover:scale-97"
-                        }`}
-                >
+                        }`}>
                     Products
                 </button>
 
@@ -38,8 +37,7 @@ const TabSection = ({ setActiveTab, carts }) => {
                         ${active === "Cart"
                             ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-lg scale-103"
                             : "bg-gray-200 text-[#101727] hover:scale-97"
-                        }`}
-                >
+                        }`}>
                     Cart ({carts.length})
                 </button>
 
