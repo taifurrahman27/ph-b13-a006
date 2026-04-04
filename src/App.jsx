@@ -8,6 +8,8 @@ import Navbar from './Component/Navbar/Navbar'
 import Stats from './Component/Stats/Stats'
 import Cart from './Component/Main/Cards/Cart'
 import { ToastContainer } from 'react-toastify'
+import Footer from './Component/Footer/Footer'
+import Steps from './Component/Steps/Steps'
 
 
 const getCards = async () => {
@@ -30,7 +32,7 @@ function App() {
   return (
     <>
 
-      <Navbar />
+      <Navbar carts={carts} />
       <Banner />
       <Stats />
       <TabSection activeTab={activeTab} setActiveTab={setActiveTab} carts={carts} />
@@ -39,6 +41,9 @@ function App() {
         <Cards cardsPromise={cardsPromise} carts={carts} setCarts={setCarts} />
       </Suspense> :
         <Cart carts={carts} setCarts={setCarts} />}
+      <Steps />
+
+      <Footer />
       <ToastContainer />
     </>
   )

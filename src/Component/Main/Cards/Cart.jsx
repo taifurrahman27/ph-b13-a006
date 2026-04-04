@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const Cart = ({ carts, setCarts }) => {
-    console.log(carts);
+    // console.log(carts);
     const totalPrice = carts.reduce((sum, item) => sum + item.price, 0)
 
     const handleProceed = () => {
@@ -19,7 +19,7 @@ const Cart = ({ carts, setCarts }) => {
 
     return (
         <div className='container mx-auto rounded-2xl my-5'>
-            <h1 className='text-3xl font-bold p-5'>Your Cart</h1>
+            <h1 className='text-3xl font-bold py-5'>Your Cart</h1>
 
             {
                 carts.map(item => <div key={item.id}>
@@ -52,13 +52,20 @@ const Cart = ({ carts, setCarts }) => {
                     <span className="text-xl font-black">${totalPrice}</span>
                 </div>
 
-                <button
-                    onClick={() => handleProceed()}
+                {carts.length === 0 ? (<p className='text-center text-2xl font-bold my-10'>Your Cart is Empty. Please add item to proceed.</p>)
+                    :
+                    (
+                        <><button
+                            onClick={() => handleProceed()}
 
-                    disabled={carts.length === 0}
-                    className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">
-                    Proceed to Checkout
-                </button>
+                            disabled={carts.length === 0}
+                            className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">
+                            Proceed to Checkout
+                        </button>
+                        </>
+                    )
+                }
+
             </div>
 
         </div>
