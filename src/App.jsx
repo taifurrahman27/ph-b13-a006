@@ -10,6 +10,7 @@ import Cart from './Component/Main/Cards/Cart'
 import { ToastContainer } from 'react-toastify'
 import Footer from './Component/Footer/Footer'
 import Steps from './Component/Steps/Steps'
+import Pricing from './Component/Pricing/Pricing'
 
 
 const getCards = async () => {
@@ -21,12 +22,8 @@ const getCards = async () => {
 function App() {
 
   const [activeTab, setActiveTab] = useState("Products");
-  // console.log(activeTab);
   const cardsPromise = getCards();
   const [carts, setCarts] = useState([]);
-
-  // console.log(carts);
-
 
 
   return (
@@ -42,6 +39,7 @@ function App() {
       </Suspense> :
         <Cart carts={carts} setCarts={setCarts} />}
       <Steps />
+      <Pricing />
 
       <Footer />
       <ToastContainer />

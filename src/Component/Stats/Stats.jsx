@@ -1,11 +1,8 @@
-import React from 'react';
-import { MdSafetyDivider } from 'react-icons/md';
 import { PiLineVerticalThin } from 'react-icons/pi';
-import { RxDividerVertical } from 'react-icons/rx';
 
 const Stats = () => {
     return (
-        <div className=' bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-5 my-5'>
+        <div className=' bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-15 my-15 text-white'>
             <div className='container mx-auto flex justify-between items-center text-center'>
                 <div>
                     <h2 className='text-6xl font-extrabold'>50K+</h2>

@@ -3,7 +3,7 @@ import { IoPlayOutline } from 'react-icons/io5';
 
 const Banner = () => {
     return (
-        <div className='container mx-auto text-center'>
+        <div className='container mt-20 mx-auto text-center lg:grid grid-cols-2'>
             <div className='space-y-5 mb-4'>
                 <div className='mx-auto bg-[#f1f2f6] w-fit h-fit p-2 shadow-md rounded-full flex justify-between items-center gap-1'>
                     <img src="/src/assets/colored-circle.svg" alt="" />
@@ -15,8 +15,8 @@ const Banner = () => {
                     <br />Explore Products
                 </p>
                 <div>
-                    <button className='btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full'>Explore Products</button>
-                    <button className='btn btn-outline rounded-full'> <IoPlayOutline /> Watch Demo</button>
+                    <button className='btn text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full'>Explore Products</button>
+                    <button className='btn btn-outline rounded-full bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-2'><img className='h-4 w-4' src="/src/assets/Play.png" alt="" /> Watch Demo</button>
                 </div>
             </div>
 

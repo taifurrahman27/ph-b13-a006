@@ -1,10 +1,8 @@
-import React from 'react';
 import { IoCartOutline } from 'react-icons/io5';
-import Cart from '../Main/Cards/Cart';
 
 const Navbar = ({ carts }) => {
     return (
-        <div>
+        <div className='container mx-auto'>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -24,7 +22,7 @@ const Navbar = ({ carts }) => {
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">DigiTools</a>
+                    <a className="btn btn-ghost bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-3xl font-extrabold">DigiTools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -37,13 +35,13 @@ const Navbar = ({ carts }) => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end gap-2 py-2 relative">
+                <div className="navbar-end gap-4 py-2 relative">
                     <IoCartOutline />
                     {
-                        carts.length === 0 ? ("") : <span className='absolute mr-47 -mt-6 text-xs font-bold text-center bg-red-500 h-4 w-4 rounded-full'>{carts.length}</span>
+                        carts.length === 0 ? ("") : <span className='absolute mr-50 -mt-6 text-white text-xs font-bold text-center bg-red-500 h-4 w-4 rounded-full'>{carts.length}</span>
                     }
                     <a className="btn">Login</a>
-                    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">Get Started</a>
+                    <a className="btn text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">Get Started</a>
 
                 </div>
             </div>

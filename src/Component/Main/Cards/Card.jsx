@@ -31,7 +31,7 @@ const Card = ({ card, carts, setCarts }) => {
             </div>
 
             <div>
-                <h3 className="text-xl font-bold text-gray-900">{card.name}</h3>
+                <h3 className="text-xl font-bold text-[#101727]">{card.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-500">
                     {card.description}
                 </p>
