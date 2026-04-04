@@ -3,7 +3,7 @@ import React from 'react';
 const TabSection = ({ setActiveTab, carts }) => {
 
     return (
-        <div className='container mx-auto text-center my-5'>
+        <div className='container mx-auto text-center my-16'>
             <h1 className='text-5xl font-extrabold my-5 text-[#101727]'>Premium Digital Tools</h1>
 
             <p>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>

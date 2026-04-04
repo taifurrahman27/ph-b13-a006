@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify'
 import Footer from './Component/Footer/Footer'
 import Steps from './Component/Steps/Steps'
 import Pricing from './Component/Pricing/Pricing'
+import Transform from './Component/Transform/Transform'
 
 
 const getCards = async () => {
@@ -40,6 +41,7 @@ function App() {
         <Cart carts={carts} setCarts={setCarts} />}
       <Steps />
       <Pricing />
+      <Transform />
 
       <Footer />
       <ToastContainer />
