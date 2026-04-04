@@ -38,7 +38,7 @@ const Navbar = ({ carts }) => {
                 <div className="navbar-end gap-4 py-2 relative">
                     <IoCartOutline />
                     {
-                        carts.length === 0 ? ("") : <span className='absolute mr-50 -mt-6 text-white text-xs font-bold text-center bg-red-500 h-4 w-4 rounded-full'>{carts.length}</span>
+                        carts.length === 0 ? ("") : <span className='absolute mr-51 -mt-6 text-white text-xs font-bold text-wrap text-center bg-red-600 h-4 w-4 rounded-full'>{carts.length}</span>
                     }
                     <a className="btn">Login</a>
                     <a className="btn text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">Get Started</a>

@@ -5,16 +5,18 @@ import { toast } from 'react-toastify';
 const Card = ({ card, carts, setCarts }) => {
 
     const [isSubs, setSubs] = useState(false);
+
     const handleBuyNow = () => {
         setSubs(true);
 
         const isFound = carts.find(item => item.id === card.id);
         if (isFound) {
-            toast.error('Item Lready in cart')
+            toast.error('Item Already in cart')
             return;
         }
         setCarts([...carts, card]);
-        toast("Item Adde To Cart")
+
+        toast("Item Added To Cart")
     };
 
 

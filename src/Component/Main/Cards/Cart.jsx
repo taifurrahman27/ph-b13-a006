@@ -17,56 +17,58 @@ const Cart = ({ carts, setCarts }) => {
     }
 
     return (
-        <div className='container mx-auto rounded-2xl my-5 bg-[#F2F2F2]'>
-            <h1 className='text-3xl font-bold py-5'>Your Cart</h1>
+        <div className='bg-[#F2F2F2] py-5'>
+            <div className='container mx-auto rounded-2xl my-5'>
+                <h1 className='text-3xl font-bold py-5'>Your Cart</h1>
 
-            {
-                carts.map(item => <div key={item.id}>
+                {
+                    carts.map(item => <div key={item.id}>
 
-                    <div className='bg-[#F9FAFC] p-5 flex justify-between items-center my-5 rounded-xl'>
-                        <div className='flex gap-2.5'>
-                            <img className='max-h-12 rounded-xl' src={item.icon} alt="" />
-                            <div><h4 className="font-bold text-[#101727]">{item.name}</h4>
-                                <p className="text-xs font-semibold text-blue-600">
-                                    ${item.price} <span className="text-gray-500 font-normal">/ {item.period}</span>
-                                </p></div>
+                        <div className='bg-[#F9FAFC] p-5 flex justify-between items-center my-5 rounded-xl'>
+                            <div className='flex gap-2.5'>
+                                <img className='max-h-12 rounded-xl' src={item.icon} alt="" />
+                                <div><h4 className="font-bold text-[#101727]">{item.name}</h4>
+                                    <p className="text-xs font-semibold text-blue-600">
+                                        ${item.price} <span className="text-gray-500 font-normal">/ {item.period}</span>
+                                    </p></div>
+                            </div>
+
+                            <button
+                                onClick={() => handleRemove(item)}
+                                className="p-2 text-red-500 hover:text-red-600 rounded-xl transition-color
+                    active:scale-95"
+                                aria-label="Remove item"
+                            >Remove
+                            </button>
                         </div>
 
-                        <button
-                            onClick={() => handleRemove(item)}
-                            className="p-2 text-red-500 hover:text-red-600 rounded-xl transition-color
-                    active:scale-95"
-                            aria-label="Remove item"
-                        >Remove
-                        </button>
-                    </div>
 
-
-                </div>)
-            }
-
-            <div className="border-t border-gray-100 pt-6">
-                <div className="flex justify-between items-center mb-6 px-1">
-                    <span className="text-gray-400 font-bold">Total Amount</span>
-                    <span className="text-xl font-black">${totalPrice}</span>
-                </div>
-
-                {carts.length === 0 ? (<p className='text-center text-gray-400 text-2xl font-bold my-10'>Your Cart is Empty. Please add item to proceed.</p>)
-                    :
-                    (
-                        <><button
-                            onClick={() => handleProceed()}
-
-                            disabled={carts.length === 0}
-                            className="btn w-full text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">
-                            Proceed to Checkout
-                        </button>
-                        </>
-                    )
+                    </div>)
                 }
 
-            </div>
+                <div className="border-t border-gray-100 pt-6">
+                    <div className="flex justify-between items-center mb-6 px-1">
+                        <span className="text-gray-400 font-bold">Total Amount</span>
+                        <span className="text-xl font-black">${totalPrice}</span>
+                    </div>
 
+                    {carts.length === 0 ? (<p className='text-center text-gray-400 text-2xl font-bold my-10'>Your Cart is Empty. Please add item to proceed.</p>)
+                        :
+                        (
+                            <><button
+                                onClick={() => handleProceed()}
+
+                                disabled={carts.length === 0}
+                                className="btn w-full text-white font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">
+                                Proceed to Checkout
+                            </button>
+                            </>
+                        )
+                    }
+
+                </div>
+
+            </div>
         </div>
     );
 };
