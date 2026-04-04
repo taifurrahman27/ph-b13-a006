@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
 
                 <div className='text-[#FAFAFA]'>
-                    <hr class="border-t border-gray-300"></hr>
+                    <hr className="border-t border-gray-300"></hr>
 
                     <div className='text-center space-y-4 justify-between items-center  py-7 md:flex'>
                         <p>© 2026 Digitools. All rights reserved.</p>

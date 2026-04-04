@@ -1,5 +1,9 @@
 import React from 'react';
 
+import userImg from "../../assets/user.png"
+import productsImg from "../../assets/package.png"
+import rocketImg from "../../assets/rocket.png"
+
 const Steps = () => {
     return (
         <div className='bg-[#F9FAFC]'>
@@ -16,7 +20,7 @@ const Steps = () => {
                             <p className='text-xs p-4 font-bold bg-linear-to-r from-[#4F39F6]  to-[#9514FA] rounded-full text-white'>01</p>
                         </div>
                         <div className='h-24 w-24 flex  items-center justify-center   self-center bg-[#9514FA10] rounded-full'>
-                            <img className='self-center' src="/src/assets/user.png" alt="User" />
+                            <img className='self-center' src={userImg} alt="User" />
                         </div>
                         <h4 className='text-2xl font-bold text-[#101727]'>Create Account</h4>
                         <p className='text-[#627382]'>Sign up for free in seconds. No credit card required to get started.</p>
@@ -28,7 +32,7 @@ const Steps = () => {
                             <p className='text-xs p-4 font-bold bg-linear-to-r from-[#4F39F6]  to-[#9514FA] rounded-full text-white'>02</p>
                         </div>
                         <div className='h-24 w-24 flex  items-center justify-center   self-center bg-[#9514FA10] rounded-full'>
-                            <img className='self-center' src="/src/assets/package.png" alt="Products" />
+                            <img className='self-center' src={productsImg} alt="Products" />
                         </div>
                         <h4 className='text-2xl font-bold text-[#101727]'>Choose Products</h4>
                         <p className='text-[#627382]'>Browse our catalog and select the tools that fit your needs.</p>
@@ -40,7 +44,7 @@ const Steps = () => {
                             <p className='text-xs p-4 font-bold bg-linear-to-r from-[#4F39F6]  to-[#9514FA] rounded-full text-white'>03</p>
                         </div>
                         <div className='h-24 w-24 flex  items-center justify-center   self-center bg-[#9514FA10] rounded-full'>
-                            <img className='self-center' src="/src/assets/rocket.png" alt="Rocket" />
+                            <img className='self-center' src={rocketImg} alt="Rocket" />
                         </div>
                         <h4 className='text-2xl font-bold text-[#101727]'>Start Creating</h4>
                         <p className='text-[#627382]'>Download and start using your premium tools immediately.</p>
